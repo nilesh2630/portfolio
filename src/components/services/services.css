@@ -1,0 +1,122 @@
+
+.services {
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 3rem 0;
+}
+
+.awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.awesome span {
+    display: block;
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.awesome span:nth-child(2) {
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.awesome span:nth-child(3) {
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.s-button {
+    width: 100%;
+    max-width: 200px;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.cards > div {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+}
+
+.s-blur2 {
+    position: absolute;
+    left: 0;
+    top: 8rem;
+}
+
+.s-blur1 {
+    position: absolute;
+    top: 13rem;
+    left: -18rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services {
+        padding: 0 1rem;
+        margin: 2rem 0;
+    }
+
+    .awesome span {
+        font-size: 1.5rem;
+    }
+
+    .s-button {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .s-blur2 {
+        top: 6rem;
+    }
+
+    .s-blur1 {
+        top: 10rem;
+        left: -10rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .awesome span {
+        font-size: 1.2rem;
+    }
+
+    .s-button {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .s-blur2 {
+        top: 4rem;
+    }
+
+    .s-blur1 {
+        top: 8rem;
+        left: -6rem;
+    }
+}
